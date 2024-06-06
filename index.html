@@ -19,7 +19,8 @@
    <script>      
        console.clear();         
        function random(){
-          
+           const audio = new Audio("dice.wav");
+          audio.play();
            let a = Math.floor(Math.random()*6 +1 );  
            imagechange.src=a+".png";
            console.log(a);
@@ -27,17 +28,9 @@
                  
        }
 
-     const audio = new Audio("dice.wav");
+     
 
-const button = document.querySelectorAll("button");
 
-button.forEach(button=>{
-
-button.addEventListener("click", ()=>{
-
-audio.play();
-})
-})
        
    </script>
 </body>
