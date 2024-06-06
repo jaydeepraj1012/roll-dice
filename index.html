@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ludo dice</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome Ludo World</h1>  
+    <div id="dice">
+
+   
+    <button onclick="random()" id="button" >
+        <img  id="imagechange" src="1.png"  style="">
+    </button>
+</div>  
+    <h1 id="number" style=""> please click on dice</h1>
+    <script>      
+        console.clear();         
+        function random(){
+           
+            let a = Math.floor(Math.random()*6 +1 );  
+            imagechange.src=a+".png";
+            console.log(a);
+            document.getElementById("number").innerHTML=a;  
+                  
+        }
+
+      
+        
+    </script>
+</body>
+</html>
